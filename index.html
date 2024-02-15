@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Konverter Suhu</title>
+    
+    <title>Konversi Suhu Celcius</title>
 </head>
-<body>
-    <header id="navigation-bar">
-        <h3 id="logo">Converter</h3>
-        <nav id="navigation">
-            <a href="">Lihat Hasil</a>
-            <a href="">Lihat Rumus</a>
-        </nav>
-    </header>
-    <div class="input-section">
-        <label for="input-field">Celcius</label>
-        <input type="number" id="input-field">
-    </div>
-    <button class="my-button">Konversi</button>
+<body style="background-image: url(background.jpg); background-repeat: no-repeat; background-size: cover;">
+
+    <form action="#">
+        <h1>Temperature Conversion</h1>
+
+        <label for="firstTemp">From :</label>
+        <select id="firstTemp">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celcius">Celcius</option>
+        </select>
+        <br><br>
+        <label for="secondTemp">To :</label>
+        <select id="secondTemp">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celcius">Celcius</option>
+        </select>
+        <br><br>
+    
+        <input type="number" id="input">
+        <br>
+        <button onclick="convert()">Convert This!</button>
+        <button onclick="clearInput()">Clear</button>
+        <br>
+        <p id="result"></p>
+        <p id="formula"></p>
+        
+    </form>
+    <script src="js/script.js"></script>
+
 </body>
 </html>

@@ -1,56 +1,63 @@
-#navigation-bar {
-    display: flex;
-    justify-content: space-between;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@600&family=Kalnia:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM SANS';
 }
 
-#logo {
-    height: min-content;
-    margin-top: 0;
+form { 
+    background-color: rgba(255, 255, 255, 0.484);
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 50px;
+    display: block;
+    font-family: 'DM SANS';
+    margin-top: 4%;
+
 }
 
-#navigation {
-    display: flex;
+#title {
+    font-size: larger;
 }
 
-#navigation>a {
-    text-decoration: none;
-    padding: 8px;
+select {
+    background:none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-family: 'DM Sans';
+    font-weight: 900;
+    border: 2px solid black;
 }
 
-#navigation:hover {
-    color: red;
-}
-
-.input-section{
-    display: flex;
-    flex-direction: column;
-}
-
-#input-field {
+#input {
     outline: none;
-    border-radius: 8px;
-    border: solid black;
-    padding: 8px 8px;
-}
-
-#input-field:focus{
-    border: solid green;
-}
-
-.my-button {
-    background-color: purple;
-    color: white;
-    border-radius: 8px;
     border: none;
-    padding: 8px 16px;
+    border: 3px solid #4f7df9;
+    border-radius: 17px;
+    width: 60%;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+button {
+    /* font-size: 1.5em; */
+    background-color: #D14D72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
     cursor: pointer;
+    font-family: 'DM sans';
 }
 
-.my-button:hover {
-    background-color:plum;
+button:hover {
+    background-color :#cd6784;
 }
 
-.my-button:active {
-    background-color: brown;
-    transform: translateY(60px);
+#result{
+    font-family: 'DM SANS';
+    font-weight: 900;
 }
